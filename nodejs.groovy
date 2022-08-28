@@ -16,7 +16,7 @@ job('NodeJsExample') {
       repositoryName('helloworld')
       tag('${GIT_REVISION,length=7}')
       registryCredentials('ecr')
-      dockerRegistryURL('116927014662.dkr.ecr.ap-northeast-2.amazonaws.com/helloworld')
+      dockerRegistryURL('https://116927014662.dkr.ecr.ap-northeast-2.amazonaws.com/helloworld')
       forcePull(false)
       forceTag(false)
       createFingerprints(false)
